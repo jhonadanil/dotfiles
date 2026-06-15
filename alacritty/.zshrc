@@ -11,7 +11,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 
 # ============================
-#   PROMPT PERSONALIZADO AVIT
+#   PROMPT PERSONALIZADO
 # ============================
 
 PROMPT='%F{green}%~%f
@@ -19,6 +19,11 @@ PROMPT='%F{green}%~%f
 
 # Espacio entre comandos
 precmd() {
+  print ""
+}
+
+# Espacio entre comando y su salida
+preexec() {
   print ""
 }
 
